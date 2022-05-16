@@ -1,0 +1,39 @@
+GET http://localhost:5000/products
+
+###
+
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "product_name": "PS4",
+    "product_value": "600"
+}
+
+###
+
+GET http://localhost:5000/orders
+
+###
+
+POST http://localhost:5000/orders
+Content-Type: application/json
+
+{
+    "product_id": "21"
+}
+
+###
+
+PUT http://localhost:5000/orders/3
+Content-Type: application/json
+
+{
+    "product_id": "222"
+}
+
+###
+
+DELETE http://localhost:5000/orders/3
+
+###
